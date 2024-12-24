@@ -14,6 +14,28 @@ namespace SkySoftwareConsole.Models
         public int Sum()
         {
             return(int)x + (int)y;
+        }    
+        public int Subtract()
+        {
+            return(int)x - (int)y;
+        }
+         public int Multiply()
+        {
+            return(int)x * (int)y;
+        } 
+        public int Divide()
+        {
+            try
+            {
+                var newVal = x / y;
+                return newVal;
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Cannot divide by zero");
+                return 0;
+
+            }
         }
 
     }
