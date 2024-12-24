@@ -39,6 +39,7 @@ namespace SkySoftwareConsole.Models
         }
         /// <summary>
         /// Divide Function calculate Division between x and y
+        /// Contain DivideByZeroException to handle DivideByZero
         /// </summary>
         /// <returns></returns>
         public int Divide()
