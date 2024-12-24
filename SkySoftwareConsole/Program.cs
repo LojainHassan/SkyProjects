@@ -1,2 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
+class program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+        Console.ReadLine();
+    }
+}
+
