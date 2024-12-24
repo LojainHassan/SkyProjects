@@ -22,18 +22,19 @@ namespace SkySoftwareConsole.Models
         /// <summary>
         ///  x and y property
         /// </summary>
-        public int x { get; set; }
-        public int y { get; set; }
+        private  int x { get; set; }
+        private  int y { get; set; }
         /// <summary>
         ///  sum function calculate summation between x and y
         /// </summary>
         /// <returns></returns>
         public int Sum()
         {
-            return(int)x + (int)y;
-        }    
+            var sum = x + y;
+            return sum;
+        }
         /// <summary>
-        ///Subtract function calculate Subtraction between x and y
+        ///Subtract function calculate Difference  between x and y
         /// </summary>
         /// <returns></returns>
         public int Subtract()
@@ -41,7 +42,7 @@ namespace SkySoftwareConsole.Models
             return(int)x - (int)y;
         }
         /// <summary>
-        ///Multipy Function  calculate multiplication between x and y
+        ///Multipy Function  calculate product between x and y
         /// </summary>
         /// <returns></returns>
         public int Multiply()
@@ -49,7 +50,7 @@ namespace SkySoftwareConsole.Models
             return(int)x * (int)y;
         }
         /// <summary>
-        /// Divide Function calculate Division between x and y
+        /// Divide Function calculate Quotient  between x and y
         /// Contain DivideByZeroException to handle DivideByZero
         /// </summary>
         /// <returns></returns>
