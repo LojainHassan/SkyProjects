@@ -9,6 +9,17 @@ namespace SkySoftwareConsole.Models
     public class Calculator
     {
         /// <summary>
+        /// constructor to intialize x and y
+        /// </summary>
+        /// <param name="x">this.x</param>
+        /// <param name="y">this.y</param>
+        public Calculator(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        /// <summary>
         ///  x and y property
         /// </summary>
         public int x { get; set; }
